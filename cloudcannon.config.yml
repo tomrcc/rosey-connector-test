@@ -2,19 +2,10 @@ source: src
 paths:
   static: ''
   uploads: assets/images
-  data: _data
-  includes: _includes
-  layouts: _includes
-  collections: ''
-  pages: ''
+
 collections_config:
   pages:
     path: pages
-    output: true
-    filter:
-      base: strict
-      exclude:
-        - tags.md
     icon: laptop_mac
     _enabled_editors:
       - visual
@@ -39,15 +30,9 @@ collections_config:
         remove_extra_inputs: false
         name: New Page
         icon: notes
-        _editables:
-        _enabled_editors:
-        _inputs:
-        _select_data:
-        _structures:
         new_preview_url: /
   posts:
     path: pages/blog
-    output: true
     icon: article
     _enabled_editors:
       - content
@@ -56,7 +41,6 @@ collections_config:
       tags:
         type: array
         options:
-          allow_create: true
           empty_type: array
         cascade: true
       tags[*]:
@@ -81,11 +65,27 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: true
   data:
-    output: false
+    path: _data
+    disable_url: true
     icon: data_usage
     disable_add: true
     disable_add_folder: true
     disable_file_actions: false
+  translations:
+    path: rosey
+    icon: translate
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: false
+    glob:
+      - config.yaml
+      - 'translations/**'
+    _inputs:
+      urlTranslation:
+        type: text
+        comment: Provide a translation for the URL that Rosey will build this page at.
+
 collection_groups:
   - heading: Pages
     collections:
