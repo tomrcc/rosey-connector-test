@@ -2,7 +2,7 @@ urlTranslation: index.html
 _inputs:
   $:
     type: object
-    comment: "[See ](https://poised-plain.cloudvent.net/)"
+    comment: '[See ](https://poised-plain.cloudvent.net/)'
     options:
       place_groups_below: false
       groups:
@@ -18,7 +18,7 @@ _inputs:
     hidden: false
     type: textarea
     options: {}
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=Eleventy%20Bookshop%20S\
-      tarter)"
-eleventy-bookshop-starter: ""
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Eleventy%20Bookshop%20Starter)
+eleventy-bookshop-starter: Translatey-McTranslateFace
