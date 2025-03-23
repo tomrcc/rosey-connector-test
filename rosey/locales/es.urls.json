@@ -15,13 +15,13 @@
 		"original": "blog/all-the-bells-and-whistles/index.html",
 		"value": "blog/all-the-bells-and-whistles/index.html"
 	},
-	"blog/best-email-sending-services-changed/index.html": {
-		"original": "blog/best-email-sending-services-changed/index.html",
-		"value": "blog/best-email-sending-services-changed/index.html"
-	},
 	"blog/email-delivery-tips/index.html": {
 		"original": "blog/email-delivery-tips/index.html",
 		"value": "blog/email-delivery-tips/index.html"
+	},
+	"blog/best-email-sending-services-changed/index.html": {
+		"original": "blog/best-email-sending-services-changed/index.html",
+		"value": "blog/best-email-sending-services-changed/index.html"
 	},
 	"blog/five-things-to-improve-your-email-templates/index.html": {
 		"original": "blog/five-things-to-improve-your-email-templates/index.html",
@@ -31,13 +31,13 @@
 		"original": "blog/tags/all/index.html",
 		"value": "blog/tags/all/index.html"
 	},
-	"blog/tags/bells/index.html": {
-		"original": "blog/tags/bells/index.html",
-		"value": "blog/tags/bells/index.html"
-	},
 	"blog/tags/email/index.html": {
 		"original": "blog/tags/email/index.html",
 		"value": "blog/tags/email/index.html"
+	},
+	"blog/tags/bells/index.html": {
+		"original": "blog/tags/bells/index.html",
+		"value": "blog/tags/bells/index.html"
 	},
 	"blog/tags/marketing/index.html": {
 		"original": "blog/tags/marketing/index.html",
@@ -47,12 +47,12 @@
 		"original": "blog/tags/posts/index.html",
 		"value": "blog/tags/posts/index.html"
 	},
-	"blog/tags/technology/index.html": {
-		"original": "blog/tags/technology/index.html",
-		"value": "blog/tags/technology/index.html"
-	},
 	"blog/tags/whistles/index.html": {
 		"original": "blog/tags/whistles/index.html",
 		"value": "blog/tags/whistles/index.html"
+	},
+	"blog/tags/technology/index.html": {
+		"original": "blog/tags/technology/index.html",
+		"value": "blog/tags/technology/index.html"
 	}
 }

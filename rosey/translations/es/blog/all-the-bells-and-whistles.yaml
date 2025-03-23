@@ -11,8 +11,111 @@ _inputs:
         - heading: Still to translate (es)
           comment: Text to translate on
             [blog/all-the-bells-and-whistles/](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/)
-          inputs: []
+          inputs:
+            - a-heading-2
+            - a-heading-3
+            - a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.
+            - a-quote-test-richardson
+            - left-align
+            - undefined
+            - undefinedsome-more-text-to-show-how-inline-tint-is.
+            - undefinedtext-on-a-new-line
         - heading: Already translated (es)
           comment: Text already translated on
             [blog/all-the-bells-and-whistles/](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/)
           inputs: []
+  a-heading-2:
+    label: A heading 2
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=A%20heading%202)"
+  a-heading-3:
+    label: A heading 3
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=A%20heading%203)"
+  a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.:
+    label: A new post to test and show off what you c...
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=A%20new%20post,CloudCannon's%20content%20editor)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: A new post to test and show off what you can do from inside
+        CloudCannon's content editor.
+  a-quote-test-richardson:
+    label: A quote - Test Richardson
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=A%20quote%20-%20Test%20Richardson)"
+  left-align:
+    label: Left align
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=Left%20align)"
+  undefined:
+    label: Some underlined text in a new paragraph.An...
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=Some%20underlined%20text,with%20a%20strike)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Some underlined text in a new paragraph.Another new line with a
+        ~~strike.~~
+  undefinedsome-more-text-to-show-how-inline-tint-is.:
+    label: Some text which is normal color - Woah a t...
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=Some%20text%20which,inline%20tint%20is)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Some text which is normal color - Woah a tint! Some more text to show
+        how inline tint is.
+  undefinedtext-on-a-new-line:
+    label: Some bold text Some italic text on a new l...
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
+      #:~:text=Some%20bold%20text,a%20new%20line)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Some **bold** text Some _italic_ text on a new line
+a-heading-2: ""
+a-heading-3: ""
+a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.: ""
+a-quote-test-richardson: ""
+left-align: ""
+undefined: ""
+undefinedsome-more-text-to-show-how-inline-tint-is.: ""
+undefinedtext-on-a-new-line: ""
