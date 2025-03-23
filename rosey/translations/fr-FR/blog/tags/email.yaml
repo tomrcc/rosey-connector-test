@@ -1,0 +1,17 @@
+urlTranslation: blog/tags/email/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/tags/email/](https://poised-plain.cloudvent.net/blog/tags/email/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: Text to translate on
+            [blog/tags/email/](https://poised-plain.cloudvent.net/blog/tags/email/)
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: Text already translated on
+            [blog/tags/email/](https://poised-plain.cloudvent.net/blog/tags/email/)
+          inputs: []
