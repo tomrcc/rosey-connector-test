@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
     "node_modules/@fortawesome/fontawesome-free/webfonts"
   );
 
-  eleventyConfig.addWatchTarget("tailwind.config.cjs");
+  eleventyConfig.addWatchTarget("tailwind.config.js");
   eleventyConfig.addWatchTarget("src/assets/styles/**/*.{css,scss}");
   eleventyConfig.addWatchTarget("component-library/");
 
