@@ -1,5 +1,6 @@
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const eleventyRoseyTaggerPlugin = require("./rosey-connector/ssgs/eleventyRoseyTaggerPlugin.cjs");
 
 const MarkdownIt = require("markdown-it"),
   md = new MarkdownIt({
@@ -10,6 +11,8 @@ const MarkdownIt = require("markdown-it"),
 const image_shortcode = require('./_11ty_config/image_shortcode')
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.amendLibrary("md", eleventyRoseyTaggerPlugin);
+
   eleventyConfig.addPassthroughCopy("src/assets/images")
   eleventyConfig.addPassthroughCopy("src/assets/videos")
   eleventyConfig.addPassthroughCopy("src/assets/documents")
