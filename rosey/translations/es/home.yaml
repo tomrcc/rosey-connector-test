@@ -2,23 +2,23 @@ urlTranslation: index.html
 _inputs:
   $:
     type: object
-    comment: '[See ](https://frank-branch.cloudvent.net/)'
+    comment: "[See ](https://frank-branch.cloudvent.net/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (es)
           comment: Text to translate on [](https://frank-branch.cloudvent.net/)
-          inputs:
-            - eleventy-bookshop-starter
+          inputs: []
         - heading: Already translated (es)
           comment: Text already translated on [](https://frank-branch.cloudvent.net/)
-          inputs: []
+          inputs:
+            - eleventy-bookshop-starter
   eleventy-bookshop-starter:
     label: Eleventy Bookshop Starter
     hidden: false
     type: textarea
     options: {}
-    comment: >-
-      [See on
-      page](https://frank-branch.cloudvent.net/#:~:text=Eleventy%20Bookshop%20Starter)
+    comment: "[See on
+      page](https://frank-branch.cloudvent.net/#:~:text=Eleventy%20Bookshop%20S\
+      tarter)"
 eleventy-bookshop-starter: Spanish test
