@@ -1,0 +1,18 @@
+urlTranslation: blog/all-the-bells-and-whistles/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/all-the-bells-and-whistles/](https://poised-plain.cloudvent.net/blog\
+      /all-the-bells-and-whistles/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: Text to translate on
+            [blog/all-the-bells-and-whistles/](https://poised-plain.cloudvent.net/blog/all-the-bells-and-whistles/)
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: Text already translated on
+            [blog/all-the-bells-and-whistles/](https://poised-plain.cloudvent.net/blog/all-the-bells-and-whistles/)
+          inputs: []

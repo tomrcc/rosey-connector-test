@@ -1,0 +1,14 @@
+urlTranslation: index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See ](https://poised-plain.cloudvent.net/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: Text to translate on [](https://poised-plain.cloudvent.net/)
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: Text already translated on [](https://poised-plain.cloudvent.net/)
+          inputs: []
