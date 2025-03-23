@@ -1,4 +1,13 @@
 {
   "version": 2,
-  "keys": {}
+  "keys": {
+    "eleventy-bookshop-starter": {
+      "original": "Eleventy Bookshop Starter",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    }
+  }
 }
