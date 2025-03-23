@@ -1,4 +1,4 @@
-import { checkLocales } from "./checkLocales.js";
+import { checkLocales } from "./checkLocales.mjs";
 import { readConfigFile } from "./helpers/file-helper.mjs";
 
 (async () => {

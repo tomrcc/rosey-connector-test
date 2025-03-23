@@ -1,7 +1,7 @@
-import { checkLocales } from "./checkLocales.js";
-import { generateTranslationFiles } from "./generateTranslationFiles.js";
-import { callSmartling } from "./callSmartling.js";
-import { generateLocales } from "./generateLocales.js";
+import { checkLocales } from "./checkLocales.mjs";
+import { generateTranslationFiles } from "./generateTranslationFiles.mjs";
+import { callSmartling } from "./callSmartling.mjs";
+import { generateLocales } from "./generateLocales.mjs";
 import { readConfigFile } from "./helpers/file-helper.mjs";
 
 (async () => {
