@@ -1,0 +1,18 @@
+urlTranslation: blog/five-things-to-improve-your-email-templates/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/five-things-to-improve-your-email-templates/](https://frank-branch.c\
+      loudvent.net/blog/five-things-to-improve-your-email-templates/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es)
+          comment: Text to translate on
+            [blog/five-things-to-improve-your-email-templates/](https://frank-branch.cloudvent.net/blog/five-things-to-improve-your-email-templates/)
+          inputs: []
+        - heading: Already translated (es)
+          comment: Text already translated on
+            [blog/five-things-to-improve-your-email-templates/](https://frank-branch.cloudvent.net/blog/five-things-to-improve-your-email-templates/)
+          inputs: []

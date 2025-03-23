@@ -1,0 +1,16 @@
+urlTranslation: blog/tags/all/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See blog/tags/all/](https://frank-branch.cloudvent.net/blog/tags/all/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es)
+          comment: Text to translate on
+            [blog/tags/all/](https://frank-branch.cloudvent.net/blog/tags/all/)
+          inputs: []
+        - heading: Already translated (es)
+          comment: Text already translated on
+            [blog/tags/all/](https://frank-branch.cloudvent.net/blog/tags/all/)
+          inputs: []
