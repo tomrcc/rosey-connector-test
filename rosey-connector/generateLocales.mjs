@@ -2,7 +2,7 @@ import fs from "fs";
 import YAML from "yaml";
 import markdownit from "markdown-it";
 import path from "path";
-import { isDirectory, readFileWithFallback } from "./helpers/file-helper.js";
+import { isDirectory, readFileWithFallback } from "./helpers/file-helper.mjs";
 import dotenv from "dotenv";
 const md = markdownit();
 dotenv.config();

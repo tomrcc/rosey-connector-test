@@ -1,5 +1,5 @@
 import { checkLocales } from "./checkLocales.js";
-import { readConfigFile } from "./helpers/file-helper.js";
+import { readConfigFile } from "./helpers/file-helper.mjs";
 
 (async () => {
   const configData = await readConfigFile("./rosey/config.yaml");

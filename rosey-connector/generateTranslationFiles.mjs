@@ -7,7 +7,7 @@ import {
   isDirectory,
   readFileWithFallback,
   readJsonFromFile,
-} from "./helpers/file-helper.js";
+} from "./helpers/file-helper.mjs";
 
 const nhm = new NodeHtmlMarkdown(
   /* options (optional) */ {},
@@ -244,8 +244,8 @@ function getInputConfig(inputKey, page, inputTranslationObj, baseURL) {
   const inputType = isKeyMarkdown
     ? "markdown"
     : isInputShortText
-      ? "text"
-      : "textarea";
+    ? "text"
+    : "textarea";
 
   const options = isKeyMarkdown
     ? {

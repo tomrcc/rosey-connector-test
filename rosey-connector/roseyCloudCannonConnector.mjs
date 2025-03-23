@@ -2,7 +2,7 @@ import { checkLocales } from "./checkLocales.js";
 import { generateTranslationFiles } from "./generateTranslationFiles.js";
 import { callSmartling } from "./callSmartling.js";
 import { generateLocales } from "./generateLocales.js";
-import { readConfigFile } from "./helpers/file-helper.js";
+import { readConfigFile } from "./helpers/file-helper.mjs";
 
 (async () => {
   const configData = await readConfigFile("./rosey/config.yaml");
