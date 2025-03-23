@@ -1,14 +1,20 @@
+_schema: _schema
 source: src
 paths:
-  static: ''
   uploads: assets/images
-
+  static: ''
 collections_config:
   pages:
     path: pages
     icon: laptop_mac
+    disable_url: false
     _enabled_editors:
       - visual
+    _inputs:
+      permalink:
+        type: auto
+        comment: The relative url that this page should be located (e.g. /page-name/)
+        cascade: true
     add_options:
       - name: Add New Page
         icon: pages
@@ -18,9 +24,6 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    _inputs:
-      permalink:
-        comment: The relative url that this page should be located (e.g. /page-name/)
     schemas:
       default:
         path: .cloudcannon/schemas/page.md
@@ -34,6 +37,7 @@ collections_config:
   posts:
     path: pages/blog
     icon: article
+    disable_url: false
     _enabled_editors:
       - content
       - visual
@@ -47,7 +51,11 @@ collections_config:
         type: text
         cascade: true
       permalink:
-        comment: Override the relative url for this pages location (by default it will be at /blog/page-name/ if you don't set anything here)
+        type: auto
+        comment: >-
+          Override the relative url for this pages location (by default it will
+          be at /blog/page-name/ if you don't set anything here)
+        cascade: true
     add_options:
       - name: Add New Post
         icon: post_add
@@ -64,28 +72,29 @@ collections_config:
         hide_extra_inputs: false
         remove_empty_inputs: false
         remove_extra_inputs: true
+        icon: notes
   data:
     path: _data
-    disable_url: true
     icon: data_usage
+    disable_url: true
     disable_add: true
     disable_add_folder: true
     disable_file_actions: false
   translations:
     path: rosey
-    icon: translate
-    disable_url: true
-    disable_add: true
-    disable_add_folder: true
-    disable_file_actions: false
     glob:
       - config.yaml
-      - 'translations/**'
+      - translations/**
+    icon: translate
+    disable_url: true
     _inputs:
       urlTranslation:
         type: text
         comment: Provide a translation for the URL that Rosey will build this page at.
-
+        cascade: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: false
 collection_groups:
   - heading: Pages
     collections:
@@ -96,45 +105,24 @@ collection_groups:
   - heading: Data
     collections:
       - data
-file_config:
-  - glob: pages/blog.md
-    _inputs:
-      permalink:
-        hidden: true
-  - glob: _data/icons.json
-    _inputs:
-      $:
-        comment: Add an icon from the list of [Font Awesome icons](https://fontawesome.com/search?o=r&m=free&s=solid).
-        label: Icons
-  - glob: _data/colors.json
-    _inputs:
-      $:
-        label: Colors
-        type: array
-        options:
-          structures:
-            values:
-              - label: Color
-                icon: palette
-                value:
-                  name:
-                  value:
-                _inputs:
-                  value:
-                    type: color
-data_config:
-  icons: true
-  colors: true
+      - translations
 _inputs:
   draft:
     type: checkbox
     hidden: true
+    cascade: true
   eleventyExcludeFromCollections:
+    type: auto
     hidden: true
+    cascade: true
   pagination.data:
+    type: auto
     hidden: true
+    cascade: true
   pagination.alias:
+    type: auto
     hidden: true
+    cascade: true
   pagination.size:
     type: number
     comment: The number of collection items to list per page
@@ -194,6 +182,7 @@ _inputs:
   background_color:
     type: select
     options:
+      allow_empty: true
       values: data.colors
       value_key: value
       preview:
@@ -204,6 +193,7 @@ _inputs:
   text_color:
     type: select
     options:
+      allow_empty: true
       values: data.colors
       value_key: value
       preview:
@@ -213,6 +203,7 @@ _inputs:
   color:
     type: select
     options:
+      allow_empty: true
       values: data.colors
       value_key: value
       preview:
@@ -337,6 +328,7 @@ _inputs:
     cascade: true
   favicon:
     type: image
+    cascade: true
 _structures:
   content_blocks:
     style: modal
@@ -373,7 +365,6 @@ _editables:
     table: true
     underline: true
     undo: true
-timezone: Pacific/Auckland
 _snippets_imports:
   eleventy_liquid: true
 _snippets:
@@ -383,7 +374,7 @@ _snippets:
     preview:
       text:
         - key: alert_message
-        - 'Alert'
+        - Alert
       gallery:
         image: /assets/images/snippet-previews/alert.preview.webp
     definitions:
@@ -405,26 +396,33 @@ _snippets:
       background_color:
         type: select
         options:
+          allow_empty: true
           values: data.colors
           value_key: value
           preview:
             text:
               - key: name
+        cascade: true
       icon:
         type: select
         options:
+          allow_empty: true
           values: data.icons
+        cascade: true
       color:
         type: select
         options:
+          allow_empty: true
           values: data.colors
           value_key: value
           preview:
             text:
               - key: name
+        cascade: true
       alert_message:
-        comment: This is the text displayed in the alert
         type: textarea
+        comment: This is the text displayed in the alert
+        cascade: true
   video:
     template: eleventy_liquid_bookshop_component
     inline: false
@@ -444,6 +442,7 @@ _snippets:
         options:
           paths:
             uploads: assets/videos
+        cascade: true
   file:
     template: eleventy_liquid_bookshop_component
     inline: false
@@ -466,15 +465,19 @@ _snippets:
     _inputs:
       src:
         type: file
-        label: File source
         options:
           paths:
             uploads: assets/documents
+        label: File source
+        cascade: true
       file_name:
+        type: auto
         comment: The name of the file, once downloaded.
+        cascade: true
       link_message:
         type: textarea
         comment: The text for the download link
+        cascade: true
   tint:
     template: eleventy_liquid_paired_shortcode_positional_args
     inline: true
@@ -490,5 +493,45 @@ _snippets:
           type: string
     _inputs:
       text:
-        comment: This text will be tinted
         type: textarea
+        comment: This text will be tinted
+        cascade: true
+file_config:
+  - glob: pages/blog.md
+    _inputs:
+      permalink:
+        type: auto
+        hidden: true
+        cascade: true
+  - glob: _data/icons.json
+    _inputs:
+      $:
+        type: auto
+        label: Icons
+        comment: >-
+          Add an icon from the list of [Font Awesome
+          icons](https://fontawesome.com/search?o=r&m=free&s=solid).
+        cascade: true
+  - glob: _data/colors.json
+    _inputs:
+      $:
+        type: array
+        options:
+          structures:
+            style: select
+            values:
+              - label: Color
+                icon: palette
+                value:
+                  name:
+                  value:
+                _inputs:
+                  value:
+                    type: color
+                    cascade: true
+        label: Colors
+        cascade: true
+data_config:
+  icons: true
+  colors: true
+timezone: Pacific/Auckland
