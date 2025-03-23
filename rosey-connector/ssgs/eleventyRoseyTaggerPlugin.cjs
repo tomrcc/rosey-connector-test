@@ -12,7 +12,7 @@ function generateRoseyId(children) {
     if (child.type === "text") {
       return (textString += slugify(child.content.toLowerCase()));
     }
-  }, "");
+  }, "markdown:");
 }
 
 module.exports = function (md) {
