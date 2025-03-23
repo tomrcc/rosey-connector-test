@@ -3,10 +3,6 @@
 		"original": "blog/index.html",
 		"value": "blog/index.html"
 	},
-	"index.html": {
-		"original": "index.html",
-		"value": "index.html"
-	},
 	"blog/1/index.html": {
 		"original": "blog/1/index.html",
 		"value": "blog/1/index.html"
@@ -31,13 +27,13 @@
 		"original": "blog/tags/all/index.html",
 		"value": "blog/tags/all/index.html"
 	},
-	"blog/tags/email/index.html": {
-		"original": "blog/tags/email/index.html",
-		"value": "blog/tags/email/index.html"
-	},
 	"blog/tags/bells/index.html": {
 		"original": "blog/tags/bells/index.html",
 		"value": "blog/tags/bells/index.html"
+	},
+	"blog/tags/email/index.html": {
+		"original": "blog/tags/email/index.html",
+		"value": "blog/tags/email/index.html"
 	},
 	"blog/tags/marketing/index.html": {
 		"original": "blog/tags/marketing/index.html",
@@ -54,5 +50,9 @@
 	"blog/tags/whistles/index.html": {
 		"original": "blog/tags/whistles/index.html",
 		"value": "blog/tags/whistles/index.html"
+	},
+	"index.html": {
+		"original": "index.html",
+		"value": "index.html"
 	}
 }

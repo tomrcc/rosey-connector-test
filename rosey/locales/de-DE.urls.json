@@ -47,12 +47,12 @@
 		"original": "blog/tags/posts/index.html",
 		"value": "blog/tags/posts/index.html"
 	},
-	"blog/tags/whistles/index.html": {
-		"original": "blog/tags/whistles/index.html",
-		"value": "blog/tags/whistles/index.html"
-	},
 	"blog/tags/technology/index.html": {
 		"original": "blog/tags/technology/index.html",
 		"value": "blog/tags/technology/index.html"
+	},
+	"blog/tags/whistles/index.html": {
+		"original": "blog/tags/whistles/index.html",
+		"value": "blog/tags/whistles/index.html"
 	}
 }
