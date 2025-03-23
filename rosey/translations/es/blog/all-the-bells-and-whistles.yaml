@@ -12,11 +12,11 @@ _inputs:
           comment: Text to translate on
             [blog/all-the-bells-and-whistles/](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/)
           inputs:
-            - a-heading-2
-            - a-heading-3
-            - a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.
-            - a-quote-test-richardson
-            - left-align
+            - markdown:a-heading-2
+            - markdown:a-heading-3
+            - markdown:a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.
+            - markdown:a-quote-test-richardson
+            - markdown:left-align
             - undefined
             - undefinedsome-more-text-to-show-how-inline-tint-is.
             - undefinedtext-on-a-new-line
@@ -24,27 +24,54 @@ _inputs:
           comment: Text already translated on
             [blog/all-the-bells-and-whistles/](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/)
           inputs: []
-  a-heading-2:
+  markdown:a-heading-2:
     label: A heading 2
     hidden: false
-    type: text
-    options: {}
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
     comment: "[See on
       page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
       #:~:text=A%20heading%202)"
-  a-heading-3:
+  markdown:a-heading-3:
     label: A heading 3
     hidden: false
-    type: text
-    options: {}
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
     comment: "[See on
       page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
       #:~:text=A%20heading%203)"
-  a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.:
+  markdown:a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.:
     label: A new post to test and show off what you c...
     hidden: false
-    type: textarea
-    options: {}
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
     comment: "[See on
       page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
       #:~:text=A%20new%20post,CloudCannon's%20content%20editor)"
@@ -54,19 +81,37 @@ _inputs:
       icon: translate
       content: A new post to test and show off what you can do from inside
         CloudCannon's content editor.
-  a-quote-test-richardson:
+  markdown:a-quote-test-richardson:
     label: A quote - Test Richardson
     hidden: false
-    type: textarea
-    options: {}
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
     comment: "[See on
       page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
       #:~:text=A%20quote%20-%20Test%20Richardson)"
-  left-align:
+  markdown:left-align:
     label: Left align
     hidden: false
-    type: text
-    options: {}
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
     comment: "[See on
       page](https://frank-branch.cloudvent.net/blog/all-the-bells-and-whistles/\
       #:~:text=Left%20align)"
@@ -111,11 +156,11 @@ _inputs:
       title: Untranslated Text
       icon: translate
       content: Some **bold** text Some _italic_ text on a new line
-a-heading-2: ""
-a-heading-3: ""
-a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.: ""
-a-quote-test-richardson: ""
-left-align: ""
+markdown:a-heading-2: ""
+markdown:a-heading-3: ""
+markdown:a-new-post-to-test-and-show-off-what-you-can-do-from-inside-cloudcannon's-content-editor.: ""
+markdown:a-quote-test-richardson: ""
+markdown:left-align: ""
 undefined: ""
 undefinedsome-more-text-to-show-how-inline-tint-is.: ""
 undefinedtext-on-a-new-line: ""
